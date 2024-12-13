@@ -40,16 +40,11 @@ Bitcoin's Ordinal inscriptions provide a unique opportunity to create immutable,
 Several key technologies and specifications inform this proposal:
 
 1. [Bitcoin Ordinal Theory & Inscriptions Protocol](https://docs.ordinals.com/) - Casey Rodarmor. The foundational protocol that enables inscribing arbitrary data onto individual satoshis on Bitcoin.
-
-2. [BRC-20](https://domo-2.gitbook.io/brc-20-experiment/) - Domo. An experimental token standard built on Bitcoin Ordinals that demonstrated the viability of implementing standards and protocols using inscriptions.
-
-3. [Verifiable Credentials Data Model 2.0](https://www.w3.org/TR/vc-data-model-2.0/) - Manu Sporny, Dave Longley, David Chadwick, et al. The W3C standard that defines the data model and formats for verifiable credentials.
-
-4. [DID Core Specification](https://www.w3.org/TR/did-core/) - Manu Sporny, Amy Guy, Markus Sabadello, Drummond Reed, et al. The W3C specification that establishes the foundation for decentralized identifiers and their resolution.
-
-5. [DID Linked Resources](https://w3c-ccg.github.io/DID-Linked-Resources/) - Alex Tweeddale. The DIF specification for associating verifiable resources with DIDs in a tamper-evident way.
-
-6. [`did:btco` Method Specification](https://github.com/ordinalsreserve/did-btco) - Brian Richter. A DID method that enables associating DIDs with Bitcoin using Ordinal Theory & Inscriptions.
+1. [BRC-20](https://domo-2.gitbook.io/brc-20-experiment/) - Domo. An experimental token standard built on Bitcoin Ordinals that demonstrated the viability of implementing standards and protocols using inscriptions.
+1. [Verifiable Credentials Data Model 2.0](https://www.w3.org/TR/vc-data-model-2.0/) - Manu Sporny, Dave Longley, David Chadwick, et al. The W3C standard that defines the data model and formats for verifiable credentials.
+1. [DID Core Specification](https://www.w3.org/TR/did-core/) - Manu Sporny, Amy Guy, Markus Sabadello, Drummond Reed, et al. The W3C specification that establishes the foundation for decentralized identifiers and their resolution.
+1. [DID Linked Resources](https://w3c-ccg.github.io/DID-Linked-Resources/) - Alex Tweeddale. The DIF specification for associating verifiable resources with DIDs in a tamper-evident way.
+1. [`did:btco` Method Specification](https://github.com/ordinalsreserve/did-btco) - Brian Richter. A DID method that enables associating DIDs with Bitcoin using Ordinal Theory & Inscriptions.
 
 ## Unresolved Questions
 
@@ -57,17 +52,14 @@ Several key technologies and specifications inform this proposal:
    - What are the optimal inscription sizes for different credential types?
    - How to handle credential revocation on Bitcoin?
    - What are the cost implications of different deployment approaches?
-
 2. Privacy Concerns:
    - How to balance public verifiability with privacy requirements?
    - What data should be stored on-chain vs off-chain?
    - How to implement selective disclosure?
-
 3. Technical Implementation:
    - Best practices for key management in the did:btco method
    - Approach to handling credential updates and versioning
    - Integration with existing Bitcoin wallets and infrastructure
-
 4. Deployment Platform:
    - Evaluation criteria for selecting optimal Bitcoin L2 or sidechain
    - Trade-offs between different scaling solutions
@@ -75,22 +67,21 @@ Several key technologies and specifications inform this proposal:
 
 ## Outputs
 
+DIF Labs β Cohort:
 1. Technical Specifications:
    - Specification for verifiable credential backed digital artifacts on Bitcoin
    - Updated `did:btco` method specification
-   - Reference implementation documentation
 
-2. Implementation Deliverables:
-   - Reference implementation of the digital artifact issuance system
-   - Verification library for digital artifact validation
-   - Sample applications demonstrating common use cases
-
-3. Documentation:
-   - Technical documentation and API references
-   - Implementation guides
-   - Best practices for deployment and security
-
-4. Testing and Validation:
-   - Test suite for specification compliance
-   - Security audit recommendations
-   - Performance benchmarks on different platforms 
+Future Deliverables:
+   1. Implementation Deliverables:
+      - Reference implementation of the digital artifact issuance system
+      - Verification library for digital artifact validation
+      - Sample applications demonstrating common use cases
+   1. Documentation:
+      - Technical documentation and API references
+      - Implementation guides
+      - Best practices for deployment and security
+   1. Testing and Validation:
+      - Test suite for specification compliance
+      - Security audit recommendations
+      - Performance benchmarks on different platforms 
